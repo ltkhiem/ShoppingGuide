@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/navbg">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.facebook.login.widget.ProfilePictureView
+            android:id="@+id/ppv_avatar"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+        </com.facebook.login.widget.ProfilePictureView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:visibility="visible"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome," />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:text="Admin"
+                android:gravity="right"
+                />
+
+            <TextView
+                android:id="@+id/tv_useremail"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:paddingTop="3dp"
+                android:text="Enjoy your shopping!" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_armap"
+            android:text="AR Direction"
+            android:background="#80ffffff"
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_shownearby"
+            android:text="Nearby Places"
+            android:layout_marginTop="10dp"
+            android:background="#80ffffff"
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_detect"
+            android:layout_marginTop="10dp"
+            android:text="Detect Place"
+            android:textStyle="bold"
+            android:background="#80ffffff"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_marginTop="10dp"
+            android:text="Logout"
+            android:textStyle="bold"
+            android:background="#80ffffff"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

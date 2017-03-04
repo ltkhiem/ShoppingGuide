@@ -1,0 +1,101 @@
+<!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nimah.khiem.shoppingguide.MapsActivity" />-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:map="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+
+android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Starting position: "
+        android:inputType="textMultiLine"
+        android:layout_weight="1"
+        android:id="@+id/et_startpos"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Destination: "
+        android:inputType="textMultiLine"
+        android:layout_weight="1"
+        android:id="@+id/et_destination"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_dist"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0km"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/tv_distance"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_time"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0s"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:id="@+id/tv_time"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find"
+        android:layout_weight="1"
+        android:id="@+id/btn_findpath"/>
+
+</LinearLayout>
+
+
+<com.nimah.khiem.shoppingguide.MapWrapperLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/map_wrapper">
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"/>
+</com.nimah.khiem.shoppingguide.MapWrapperLayout>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    android:background="#CDBA96"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.nimah.khiem.shoppingguide.LandmarkDetails"
+    tools:showIn="@layout/activity_landmark_details">
+
+    <ImageView
+        android:id="@+id/iv_detail_landmark_image"
+        android:layout_weight="3"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_weight="2"
+            android:id="@+id/tv_detail_name"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:text="aaaaaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/ivb_detail_share"
+                    android:src="@drawable/sharebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/ivb_detail_homepage"
+                    android:src="@drawable/homebtn"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/ivb_detail_map"
+                    android:src="@drawable/dirbtn"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/ivb_detail_wiki"
+                    android:src="@drawable/wikibtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/ivb_detail_youtube"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/youtubebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:id="@+id/detect_root_layout"
+    tools:context="com.nimah.khiem.shoppingguide.Detect">
+
+
+    <SurfaceView
+        android:id="@+id/detect_surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </SurfaceView>
+
+    <RelativeLayout
+        android:id="@+id/rl_boundingbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+
+    <com.nimah.khiem.shoppingguide.Widget.ClipRevealFrame
+        android:id="@+id/menu_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/tumblr_primary_transparent"
+        android:visibility="invisible">
+
+
+        <com.ogaclejapan.arclayout.ArcLayout
+            android:id="@+id/arc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:arc_axisRadius="@dimen/layout_child_offset_tumblr"
+            app:arc_origin="center"
+            app:arc_radius="@dimen/layout_radius_tumblr">
+
+            <Button
+                android:id="@+id/btn_arc_youtube"
+                style="@style/Item.Tumblr"
+                android:background="@drawable/youtubeicon"
+
+                />
+
+            <Button
+                android:id="@+id/btn_arc_wiki"
+                style="@style/Item.Tumblr"
+                android:background="@drawable/wikiicon"
+
+                />
+
+            <Button
+                android:id="@+id/btn_arc_home"
+                style="@style/Item.Tumblr"
+                android:background="@drawable/homeicon"
+
+                />
+
+            <Button
+                android:id="@+id/btn_arc_share"
+                style="@style/Item.Tumblr"
+                android:background="@drawable/shareicon"
+
+                />
+
+            <Button
+                android:id="@+id/btn_arc_map"
+                style="@style/Item.Tumblr"
+                android:background="@drawable/mapicon"
+
+                />
+
+        </com.ogaclejapan.arclayout.ArcLayout>
+
+        <ImageView
+            android:id="@+id/center_item"
+            style="@style/Item.Tumblr"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/tumblr_red_oval"
+            android:text="F"
+            />
+
+    </com.nimah.khiem.shoppingguide.Widget.ClipRevealFrame>
+
+    <Button
+        android:id="@+id/btn_result"
+        style="@style/Item.Tumblr"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/tumblr_white_oval"
+        android:text="R"
+        android:visibility="invisible"
+        android:textColor="#000000"
+        />
+
+    <com.github.jorgecastilloprz.FABProgressCircle
+        android:id="@+id/fabProgressCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:reusable = "true"
+        >
+
+        <!--Google FAB-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_detect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:src="@drawable/ic_upload"
+            app:rippleColor="@color/fab_ripple"
+            app:borderWidth="3dp"
+
+            />
+
+    </com.github.jorgecastilloprz.FABProgressCircle>
+
+
+</RelativeLayout>
